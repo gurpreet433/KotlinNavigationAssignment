@@ -25,7 +25,7 @@
 
 
         <Button
-            android:id="@+id/button_go_to_fragment_c"
+            android:id="@+id/button_go_to_fragment_d"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="go to fragment D (Second activity)"

@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.NavDirections
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import androidx.navigation.navArgs
 import com.gurpreet.singh.kotlinnavigationassignment.R
@@ -25,8 +27,14 @@ class FragmentC : Fragment() {
 
        Log.i("valuesPassed", args.stringPassed)
 
-        var binding : FragmentCBinding
-                    = DataBindingUtil.inflate(inflater, R.layout.fragment_c, container, false)
+        if(args.fragmentNo == 2){
+            var direction: NavDirections
+                    = FragmentCDirections.actionFragmentCToFragmentD( args.stringPassed, args.fragmentNo)
+            findNavController().navigate(direction)
+        }
+
+        var binding : FragmentCBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_c, container, false)
+        binding.messagePassed.text = args.stringPassed
 
         return binding.root
     }

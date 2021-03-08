@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">KotlinNavigationAssignment</string>
 
-    <string name="fragment_a">Hello A fragment</string>
-    <string name="fragment_b">Hello B fragment</string>
-    <string name="fragment_c">Hello C fragment</string>
-    <string name="fragment_d">Hello D fragment</string>
+    <string name="fragment_a">A fragment</string>
+    <string name="fragment_b">B fragment</string>
+    <string name="fragment_c">C fragment</string>
+    <string name="fragment_d">D fragment</string>
+    <string name="message_received">message received</string>
 
 </resources>

@@ -29,7 +29,8 @@ class FragmentA : Fragment() {
         })
 
         binding.buttonGoToFragmentC.setOnClickListener(View.OnClickListener { view: View ->
-            var direction: NavDirections = FragmentADirections.actionFragmentAToActivityB("hello Activity A")
+            var direction: NavDirections
+            = FragmentADirections.actionFragmentAToActivityB("hello From FragmentA (ActivityA)", 1)
             findNavController().navigate(direction)
         })
 

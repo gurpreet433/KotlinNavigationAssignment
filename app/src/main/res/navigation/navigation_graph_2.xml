@@ -13,10 +13,23 @@
         <argument
             android:name="string_passed"
             app:argType="string" />
+        <argument
+            android:name="fragment_no"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_fragmentC_to_fragmentD"
+            app:destination="@id/fragmentD" />
     </fragment>
     <fragment
         android:id="@+id/fragmentD"
         android:name="com.gurpreet.singh.kotlinnavigationassignment.fragments.FragmentD"
         android:label="fragment_d"
-        tools:layout="@layout/fragment_d" />
+        tools:layout="@layout/fragment_d" >
+        <argument
+            android:name="string_passed"
+            app:argType="string" />
+        <argument
+            android:name="fragment_no"
+            app:argType="integer" />
+    </fragment>
 </navigation>

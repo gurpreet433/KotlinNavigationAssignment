@@ -11,7 +11,6 @@ class ActivityA : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
         var binding = DataBindingUtil.setContentView<ActivityABinding>(this, R.layout.activity_a)
 
         findNavController(R.id.first_nav_host_fragment)

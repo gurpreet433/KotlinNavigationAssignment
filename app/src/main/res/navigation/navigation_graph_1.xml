@@ -21,7 +21,11 @@
         android:id="@+id/fragmentB"
         android:name="com.gurpreet.singh.kotlinnavigationassignment.fragments.FragmentB"
         android:label="fragment_b"
-        tools:layout="@layout/fragment_b" />
+        tools:layout="@layout/fragment_b" >
+        <action
+            android:id="@+id/action_fragmentB_to_activityB"
+            app:destination="@id/activityB" />
+    </fragment>
 
     <activity
         android:id="@+id/activityB"
@@ -30,5 +34,8 @@
         <argument
             android:name="string_passed"
             app:argType="string" />
+        <argument
+            android:name="fragment_no"
+            app:argType="integer" />
     </activity>
 </navigation>

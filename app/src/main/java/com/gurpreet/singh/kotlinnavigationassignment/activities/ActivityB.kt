@@ -23,9 +23,8 @@ class ActivityB : AppCompatActivity() {
         var binding = DataBindingUtil.setContentView<ActivityBBinding>(this, R.layout.activity_b)
 
         findNavController(R.id.second_nav_host_fragment)
-                .setGraph(
-                        R.navigation.navigation_graph_2,
-                        ActivityBArgs(args.stringPassed).toBundle()
+                .setGraph(R.navigation.navigation_graph_2,
+                        ActivityBArgs(args.stringPassed, args.fragmentNo).toBundle()
                 )
     }
 }
