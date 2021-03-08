@@ -9,7 +9,11 @@
         android:id="@+id/fragmentC"
         android:name="com.gurpreet.singh.kotlinnavigationassignment.fragments.FragmentC"
         android:label="fragment_c"
-        tools:layout="@layout/fragment_c" />
+        tools:layout="@layout/fragment_c" >
+        <argument
+            android:name="string_passed"
+            app:argType="string" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentD"
         android:name="com.gurpreet.singh.kotlinnavigationassignment.fragments.FragmentD"

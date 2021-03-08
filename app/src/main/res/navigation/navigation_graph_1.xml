@@ -9,10 +9,26 @@
         android:id="@+id/fragmentA"
         android:name="com.gurpreet.singh.kotlinnavigationassignment.fragments.FragmentA"
         android:label="fragment_a"
-        tools:layout="@layout/fragment_a" />
+        tools:layout="@layout/fragment_a" >
+        <action
+            android:id="@+id/action_fragmentA_to_fragmentB"
+            app:destination="@id/fragmentB" />
+        <action
+            android:id="@+id/action_fragmentA_to_activityB"
+            app:destination="@id/activityB" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentB"
         android:name="com.gurpreet.singh.kotlinnavigationassignment.fragments.FragmentB"
         android:label="fragment_b"
         tools:layout="@layout/fragment_b" />
+
+    <activity
+        android:id="@+id/activityB"
+        android:name="com.gurpreet.singh.kotlinnavigationassignment.activities.ActivityB"
+        android:label="ActivityB" >
+        <argument
+            android:name="string_passed"
+            app:argType="string" />
+    </activity>
 </navigation>

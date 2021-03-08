@@ -5,13 +5,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
 import com.gurpreet.singh.kotlinnavigationassignment.R
+import com.gurpreet.singh.kotlinnavigationassignment.databinding.FragmentBBinding
 
 class FragmentB : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_b, container, false)
+
+        var binding : FragmentBBinding
+                    = DataBindingUtil.inflate(inflater, R.layout.fragment_b, container, false)
+
+        return binding.root
     }
 }

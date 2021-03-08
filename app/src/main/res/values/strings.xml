@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">KotlinNavigationAssignment</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="fragment_a">Hello A fragment</string>
+    <string name="fragment_b">Hello B fragment</string>
+    <string name="fragment_c">Hello C fragment</string>
+    <string name="fragment_d">Hello D fragment</string>
+
 </resources>
